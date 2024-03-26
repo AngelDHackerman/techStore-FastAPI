@@ -1,0 +1,20 @@
+Command for turn on the server in the port 5000:
+uvicorn main:app --reload --port 5000
+
+
+como trabajaremos los modelos y esquemas en pydantic? 
+como funcionara y como crearemos la autenticacion y gestion de usuarios?
+que son y como funcionan los middlewares de autenticacion?
+
+Que otros atributos le podemos agregar a este modelo para hacer la API un poco mas completa y que nos devuelva un poco mas de informacion? 
+
+class Producto(BaseModel):
+    id: int
+    nombre: str
+    descripcion: str
+    precio: float
+  
+
+
+
+
