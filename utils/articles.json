@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphone de Alta Gama",
+    "description": "Último modelo de smartphone con pantalla AMOLED y cámara de alta resolución.",
+    "price": 999.99
+  },
+  {
+    "id": 2,
+    "name": "Laptop Gamer",
+    "description": "Portátil para juegos con gráficos de última generación y teclado retroiluminado.",
+    "price": 1799.99
+  },
+  {
+    "id": 3,
+    "name": "Laptop Estudiantil",
+    "description": "Portátil para estudios y tareas escolares",
+    "price": 799.99
+  },
+  {
+    "id": 4,
+    "name": "Libros de Matematicas",
+    "description": "Utiles libros para estudiar matematica para machine learning",
+    "price": 399.99
+  }
+]
