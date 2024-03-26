@@ -1,20 +1,35 @@
 Command for turn on the server in the port 5000:
 uvicorn main:app --reload --port 5000
 
+1) Definicion del alcance y planificacion 
 
-como trabajaremos los modelos y esquemas en pydantic? 
-como funcionara y como crearemos la autenticacion y gestion de usuarios?
-que son y como funcionan los middlewares de autenticacion?
+las funcionalidades de mi Tech Store API seran las de un CRUD, necesito que solo el usuarion "Admin" pueda elminar o agregar productos o bien cambiar los precios.
+tambien que los usuarios "normales" o los "clientes" de la API sean capaces de leer la informacion cuando hagan un request.
+Los productos estaran en un archivo javascript contenidos dentro de un objeto JSON, cada objeto json contendra el: id, name, description & price, con eso crearemos el modelo para los objetos
 
-Que otros atributos le podemos agregar a este modelo para hacer la API un poco mas completa y que nos devuelva un poco mas de informacion? 
+2) Estructura del proyecto y configuracion inicial 
+en este caso creo que trabajaremos el main.py en el direcctorio raiz del proyecto, tambien estara la carpeta "models" que contendra los modelos para las validaciones de los objetos
+de nuestra lista de articulos disponibles en la API. Y tambien la carpeta "utils" que contendra un objeto JSON con todos los articulos disponibles con su id, name, drescription 
+y price. 
 
-class Producto(BaseModel):
-    id: int
-    nombre: str
-    descripcion: str
-    precio: float
-  
+3) Modelos y Esquemas con pydantic
+Necesito que chat-gpt me explique como crear o definir eso. 
 
+4) Autenticacion de usuarios y gestion de sesiones
+la autenticacion sera con JWT para una gestion segura y escalable de las sesiones de usuario, necesito que chat-gpt me ayude con eso. 
 
+5) Implementacion de rutas protegidas y middlewares
+Una vez establecida la autenticación, protege las rutas pertinentes para asegurar que solo los usuarios autenticados puedan acceder a ciertas operaciones. 
+Los middlewares pueden manejar tareas como la verificación de tokens en cada solicitud.
+Necesito que chat-gpt me ayude con eso. 
 
+6) Pruebas unitariasa y de integracion: 
+Escribe pruebas para tu API para asegurarte de que todo funcione como se espera. 
+Las pruebas unitarias y de integración son cruciales para el mantenimiento a largo plazo y la escalabilidad de tu proyecto.
+
+7) Documentacion de la API 
+Asegurarme que la documentacion que fue generada automaticamente tengan bien anotados los modelos y rutas para hacer la documentacion util para los desarrolladores. 
+
+8) Deploy
+Una vez la API esta lista, probada y documentada, puedo usar contenedores como Docker y hacer el deploy en un servidor o plataforma PaaS, algo como AWS o GCP.
 
